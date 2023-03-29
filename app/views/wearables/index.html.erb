@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Wearables</h1>
+
+<div id="wearables">
+  <% @wearables.each do |wearable| %>
+    <%= render wearable %>
+    <p>
+      <%= link_to "Show this wearable", wearable %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New wearable", new_wearable_path %>

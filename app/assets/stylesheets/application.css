@@ -1,0 +1,98 @@
+.wearables-widget-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.widget-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.widget-header img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.header-description {
+  flex: 1;
+}
+
+.header-description h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.header-description p {
+  margin: 0;
+  font-size: 16px;
+  color: #888;
+}
+
+.wearables-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.wearable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wearable img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.connect-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+  background-color: #0062cc;
+}
+
+.connected {
+  background-color: #28a745;
+}
+
+.connected:hover {
+  background-color: #218838;
+}
+
+.powered-by {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
+}
+
+.widget-header, .header-description {
+  width: 100%;
+  max-width: 400px;
+}

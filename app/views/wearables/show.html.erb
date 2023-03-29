@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @wearable %>
+
+<div>
+  <%= link_to "Edit this wearable", edit_wearable_path(@wearable) %> |
+  <%= link_to "Back to wearables", wearables_path %>
+
+  <%= button_to "Destroy this wearable", @wearable, method: :delete %>
+</div>
