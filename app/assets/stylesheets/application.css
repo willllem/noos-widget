@@ -1,3 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 40px;
+}
+
 .wearables-widget-container {
   background-color: #f2f2f2;
   padding: 20px;
@@ -95,4 +103,84 @@
 .widget-header, .header-description {
   width: 100%;
   max-width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.login-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: hidden inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  }
+
+.login-screen h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  align-items: center;
+  margin-top: 0 auto 20px;
+  text-align: center;
+}
+
+.login-screen form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-screen label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.login-screen input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+}
+
+.login-screen button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.login-screen button:hover {
+  background-color: #0062cc;
+}
+
+.back-button {
+  background-color: transparent;
+  margin-top: 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #007bff;
+  color: #fff;
 }

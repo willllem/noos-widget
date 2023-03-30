@@ -11,10 +11,30 @@ eagerLoadControllersFrom("controllers", application)
 // lazyLoadControllersFrom("controllers", application)
 
 const connectButtons = document.querySelectorAll('.connect-button');
+const loginScreen = document.querySelector('.login-screen');
+const backButton = document.querySelector('.back-button');
+
+// Hide the login screen initially
+loginScreen.classList.add('hidden');
 
 connectButtons.forEach(button => {
   button.addEventListener('click', () => {
-    button.classList.toggle('connected');
-    button.textContent = button.classList.contains('connected') ? 'Succesfully Connected' : 'Connect to Wearable';
+    // Hide wearables widget and show login screen
+    document.querySelector('.wearables-widget').classList.add('hidden');
+    loginScreen.classList.remove('hidden');
+
+    // Change header to show back button
+    document.querySelector('.widget-header').classList.add('hidden');
+    backButton.classList.remove('hidden');
   });
+});
+
+backButton.addEventListener('click', () => {
+  // Hide login screen and show wearables widget
+  loginScreen.classList.add('hidden');
+  document.querySelector('.wearables-widget').classList.remove('hidden');
+
+  // Change header to show widget header
+  backButton.classList.add('hidden');
+  document.querySelector('.widget-header').classList.remove('hidden');
 });
